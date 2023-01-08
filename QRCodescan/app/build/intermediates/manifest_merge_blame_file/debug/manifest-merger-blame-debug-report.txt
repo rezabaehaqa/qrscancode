@@ -1,0 +1,165 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.qrcode"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CALL_PHONE" />
+11-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:4:5-68
+11-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:4:22-66
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:5:5-81
+12-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:6:5-67
+13-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:7:5-81
+14-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:7:22-78
+15
+16    <queries>
+16-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:32:5-37:15
+17        <intent>
+17-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:33:9-36:18
+18            <action android:name="android.intent.action.SENDTO" />
+18-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:34:13-67
+18-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:34:21-64
+19
+20            <data android:scheme="mailto" />
+20-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:35:13-45
+20-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:35:19-42
+21        </intent>
+22    </queries>
+23
+24    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+26        android:name="android.hardware.camera"
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+27        android:required="false" />
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+28    <uses-feature
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+29        android:name="android.hardware.camera.front"
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+30        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+31    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+33        android:name="android.hardware.camera.autofocus"
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+36        android:name="android.hardware.camera.flash"
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+39        android:name="android.hardware.screen.landscape"
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+41    <uses-feature
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+42        android:name="android.hardware.wifi"
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+43        android:required="false" />
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+44
+45    <application
+45-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:8:5-31:19
+46        android:allowBackup="true"
+46-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:9:9-35
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.8.0] C:\Users\Asus\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+48        android:dataExtractionRules="@xml/data_extraction_rules"
+48-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:10:9-65
+49        android:debuggable="true"
+50        android:fullBackupContent="@xml/backup_rules"
+50-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:11:9-54
+51        android:icon="@mipmap/ic_launcher"
+51-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:12:9-43
+52        android:label="@string/app_name"
+52-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:13:9-41
+53        android:roundIcon="@mipmap/ic_launcher_round"
+53-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:14:9-54
+54        android:supportsRtl="true"
+54-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:15:9-35
+55        android:testOnly="true"
+56        android:theme="@style/Theme.QRCode" >
+56-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:16:9-44
+57        <activity
+57-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:18:9-30:20
+58            android:name="com.example.qrcode.MainActivity"
+58-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:19:13-41
+59            android:exported="true" >
+59-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:20:13-36
+60            <intent-filter>
+60-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:21:13-25:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:22:17-69
+61-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:22:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:24:17-77
+63-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:24:27-74
+64            </intent-filter>
+65
+66            <meta-data
+66-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:27:13-29:36
+67                android:name="android.app.lib_name"
+67-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:28:17-52
+68                android:value="" />
+68-->D:\kampus\semester 3\PEMROGRAMAN MOBILE\QRCodescan\app\src\main\AndroidManifest.xml:29:17-33
+69        </activity>
+70        <activity
+70-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+71            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+71-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+72            android:clearTaskOnLaunch="true"
+72-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+73            android:screenOrientation="sensorLandscape"
+73-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+74            android:stateNotNeeded="true"
+74-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+75            android:theme="@style/zxing_CaptureTheme"
+75-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+76            android:windowSoftInputMode="stateAlwaysHidden" />
+76-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\Asus\.gradle\caches\transforms-3\1fa6f96f8c5f79554d8645abde103ad6\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+77
+78        <provider
+78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+79            android:name="androidx.startup.InitializationProvider"
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+80            android:authorities="com.example.qrcode.androidx-startup"
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+81            android:exported="false" >
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+82            <meta-data
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+84                android:value="androidx.startup" />
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Asus\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+85            <meta-data
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Asus\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+86                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+86-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Asus\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+87                android:value="androidx.startup" />
+87-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Asus\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+88        </provider>
+89    </application>
+90
+91</manifest>
